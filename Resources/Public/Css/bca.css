@@ -1,0 +1,210 @@
+body, .body-bg {
+  display: flex;
+  min-height: 100vh;
+  /* the above declaration is for the sticky footer */
+  flex-direction: column;
+  margin:0;
+  padding:0;
+  background-color:#fff;
+}
+
+/* Paddings to avoid content slipping under the floating menu */
+@media (min-width: 300px) {
+    body, .body-bg { 
+        padding:35px 0 0 0;
+    }
+}
+
+@media (min-width: 992px) {
+    body, .body-bg {
+        padding:80px 0 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    body, .body-bg {
+        padding: 55px 0 0 0;
+    }
+}
+
+/* HEADINGS */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #213e6d;
+}
+
+#p11 h1.element-header, #p11 h2.element-subheader { color: #fff;}
+
+/* Service times */
+#p62 h1.element-header.text-center {
+    color: #ffffff;
+}
+
+#p62 .body-bg {
+    background-color: #213e6d;
+    color: #f6f9ff;
+}
+
+#p62 thead, #p62 tbody, #p62 tfoot, #p62 tr, #p62 td, #p62 th {
+    border-color: inherit;
+    border-style: solid;
+    color: #f6f9ff;
+}
+
+#p62 td {
+    min-width: 7em;
+}
+
+/* h3 headers in News */
+.news h3 a {
+    color: #213e6d !important;
+}
+
+/*********************/
+/*** Sticky Footer ***/
+/*********************/
+#page-footer {
+    margin-top: auto;
+}
+
+.footer-copyright {
+    color:#4F5153;
+}
+
+/*********************/
+/*** Misc. Layouts ***/
+/*********************/
+
+.frame-layout-default {
+    padding: 5.5em 0;
+}
+
+.section-primary {
+    background-color: #f6f9ff
+}
+
+.btn, .cc-btn {
+    color: #f1f1e6;
+    border-radius: 0.5rem;
+}
+
+/***  Breadcrumb - align right ***/
+ol.breadcrumb {
+    justify-content: flex-end;
+}
+
+.breadcrumb-section {
+    background-color: #f1f1e6;
+}
+
+/*********************/
+/***** Home Page *****/
+/*********************/
+
+#c260 .card {
+    background-color: #f1f1e6;
+    border: none;
+    border-radius: 1rem;
+    color: #213e6d;
+}
+
+#c260 .card-title {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    color: #213e6d;
+    font-weight: 700;
+}
+
+#c260 .card-title a:not(.btn) {
+    color: #213e6d !important;
+}
+
+#c260 .btn-primary {
+    color: #f1f1e6;
+    background-color: #213e6d;
+    border-color: #f1f1e6;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+#c204 img {
+    width: 190px;
+    height: auto;
+}
+
+/*********************/
+/******* NEWS ********/
+/*********************/
+
+/***** List view *****/
+
+.list-group {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    color: #212121;
+    background-color: #f6f9ff;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .list-group-item {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .list-group-item {
+        flex: 0 0 47%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .list-group-item {
+        flex: 0 0 32%;
+    }
+    .list-group:after {
+        content: ' ';
+        flex: 0 0 32%;
+    }
+}
+
+.list-group-item p {
+    font-size: 1rem;
+}
+
+.list-group-item .img-fluid {
+    min-width: 100%;
+    height: auto;
+}
+
+.mb-3 {
+    margin-bottom: 0 !important;
+}
+
+/**** Prayer Request Detail View ****/
+#p81 h1, #p81 h2, #p81 h3, #p81 h4, #p81 h5, #p81 h6 {
+    color: #ffffff;
+}
+
+#p81 .page-item:first-child .page-link,
+#p83 .page-item:first-child .page-link,
+#p81 .page-item:last-child .page-link,
+#p83 .page-item:last-child .page-link {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-color: #fff;
+}

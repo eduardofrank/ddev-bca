@@ -1,0 +1,21 @@
+{
+    "name": "eduardo-frank/bca11",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://eduardofrank.co",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EduardoFrank\\Bca11\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "bca11"
+        }
+    }
+}

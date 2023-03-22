@@ -1,0 +1,82 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+	file = EXT:bca11/Resources/Public/Images/bca-192x192.png
+        fileInverted = EXT:bca11/Resources/Public/Images/bca-192x192.png
+        height = 210
+        width = 210
+        alt = BCA
+        linktitle = BCA
+    }
+#    favicon {
+#       file = EXT:bca11/Resources/Public/Icons/favicon.ico
+#    }
+    fluidtemplate {
+        layoutRootPath = EXT:bca11/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:bca11/Resources/Private/Partials/Page/
+        templateRootPath = EXT:bca11/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:bca11/Resources/Private/Layouts/
+        partialRootPath = EXT:bca11/Resources/Private/Partials/
+        templateRootPath = EXT:bca11/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:bca11/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:bca11/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:bca11/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+#plugin.bootstrap_package.settings.scss {
+#    primary = #eb3e4a
+#    secondary = #013859
+#}
+
+#
+page.theme.navigation.type = top
+page.theme.navigation.style = default
+#page.logo.file = EXT:bca11/Resources/Public/Images/bca-192x192.png
+#page.logo.fileInverted = EXT:bca11/Resources/Public/Images/bca-192x192.png
+#page.logo.height = 210 
+#page.logo.width = 210
+#page.logo.alt = BCA
+#page.logo.linktitle = BCA
+page.preloader.enable = 0
+page.theme.language.enable = 0
+plugin.bootstrap_package.settings.scss.primary = #213E6D
+plugin.bootstrap_package.settings.scss.secondary = #4890F9
+plugin.bootstrap_package.settings.scss.tertiary = #F6F9FF
+plugin.bootstrap_package.settings.scss.quaternary = #F1F1E6
+plugin.bootstrap_package.settings.scss.link-color = $secondary
+plugin.bootstrap_package_contentelements.header.defaultHeaderType = 4
+page.favicon.file >
+plugin.tx_news.view.twb5.templateRootPath = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Templates/
+plugin.tx_news.view.twb5.partialRootPath = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Partials/
+plugin.tx_news.view.twb5.layoutRootPath = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Layouts/

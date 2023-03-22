@@ -1,0 +1,113 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:bca11/Resources/Public/Scss/Theme/theme.scss
+        bca = EXT:bca11/Resources/Public/Css/bca.css
+    }
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        bca11_scripts = EXT:bca11/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+################################
+#### ADDED BY EDUARDO FRANK ####
+################################
+config.admPanel = 0
+config.contentObjectExceptionHandler = 0
+
+#### FORM CONFIGURATION ###
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:bca11/Configuration/Form/FormSetup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:bca11/Configuration/Form/FormSetup.yaml
+
+### Favicon ###
+page.headerData.2121 = TEXT 
+page.headerData.2121.value {
+<link rel="apple-touch-icon" sizes="180x180" href="typo3conf/bca11/Resources/Public/Icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="typo3conf/bca11/Resources/Public/Icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="typo3conf/bca11/Resources/Public/Icons/favicon-16x16.png">
+<link rel="manifest" href="typo3conf/bca11/Resources/Public/Icons/site.webmanifest">
+<link rel="mask-icon" href="typo3conf/bca11/Resources/Public/Icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="typo3conf/bca11/Resources/Public/Icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="typo3conf/bca11/Resources/Public/Icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+}
+
+### NEWS ###
+## Template paths ###
+plugin.tx_news {
+   view {
+      templateRootPaths >
+      templateRootPaths {
+         0 = EXT:news/Resources/Private/Templates/
+         10 = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Templates/
+         20 = {$plugin.tx_news.view.templateRootPath}
+      }
+      partialRootPaths >
+      partialRootPaths {
+         0 = EXT:news/Resources/Private/Partials/
+         10 = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Partials/
+         20 = {$plugin.tx_news.view.partialRootPath}
+      }
+      layoutRootPaths >
+      layoutRootPaths {
+         0 = EXT:news/Resources/Private/Layouts/
+         10 = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Layouts/
+         20 = {$plugin.tx_news.view.layoutRootPath}
+      }
+   }
+}
+
+### Breadcrumb - remove root of menu ###
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+	dataProcessing {
+                30 {
+                special = rootline
+                special.range = 1|-1
+                includeNotInMenu = 1
+                as = breadcrumb
+                if {
+                    value = {$page.theme.breadcrumb.enableLevel}
+                    value {
+                        insertData = 1
+                        prioriCalc = 1
+                        stdWrap.wrap = |-1
+                    }
+                    isGreaterThan {
+                        data = level
+                    }
+                }
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = nav_icon
+                        as = icon
+                    }
+                }
+            }
+        }
+    }
+}
