@@ -10,12 +10,12 @@
     },
     "autoload": {
         "psr-4": {
-            "EduardoFrank\\Bca11\\": "Classes/"
+            "EduardoFrank\\DdevBca\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "ddevbca"
+            "extension-key": "ddev_bca"
         }
     }
 }
