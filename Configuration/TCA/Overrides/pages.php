@@ -5,14 +5,14 @@ call_user_func(function()
     /**
      * Temporary variables
      */
-    $extensionKey = 'bca11';
+    $extensionKey = 'ddev_bca';
 
     /**
-     * Default PageTS for Bca11
+     * Default PageTS for DdevBca
      */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
         'Configuration/TsConfig/Page/All.tsconfig',
-        'bca11'
+        'ddev-bca'
     );
 });
