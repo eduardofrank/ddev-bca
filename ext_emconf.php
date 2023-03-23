@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Extension Manager/Repository config file for ext "bca11".
+ * Extension Manager/Repository config file for ext "ddev_bca".
  */
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'bca11',
+    'title' => 'ddev-bca',
     'description' => '',
     'category' => 'templates',
     'constraints' => [
@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'EduardoFrank\\Bca11\\' => 'Classes',
+            'EduardoFrank\\DdevBca\\' => 'Classes',
         ],
     ],
     'state' => 'stable',
