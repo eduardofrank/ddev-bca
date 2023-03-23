@@ -9,20 +9,20 @@
 ############
 page {
     logo {
-	file = EXT:bca11/Resources/Public/Images/bca-192x192.png
-        fileInverted = EXT:bca11/Resources/Public/Images/bca-192x192.png
+	file = EXT:ddev_bca/Resources/Public/Images/bca-192x192.png
+        fileInverted = EXT:ddev_bca/Resources/Public/Images/bca-192x192.png
         height = 210
         width = 210
         alt = BCA
         linktitle = BCA
     }
 #    favicon {
-#       file = EXT:bca11/Resources/Public/Icons/favicon.ico
+#       file = EXT:ddev_bca/Resources/Public/Icons/favicon.ico
 #    }
     fluidtemplate {
-        layoutRootPath = EXT:bca11/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:bca11/Resources/Private/Partials/Page/
-        templateRootPath = EXT:bca11/Resources/Private/Templates/Page/
+        layoutRootPath = EXT:ddev_bca/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:ddev_bca/Resources/Private/Partials/Page/
+        templateRootPath = EXT:ddev_bca/Resources/Private/Templates/Page/
     }
 }
 
@@ -32,9 +32,9 @@ page {
 ##################
 plugin.bootstrap_package {
     view {
-        layoutRootPath = EXT:bca11/Resources/Private/Layouts/
-        partialRootPath = EXT:bca11/Resources/Private/Partials/
-        templateRootPath = EXT:bca11/Resources/Private/Templates/
+        layoutRootPath = EXT:ddev_bca/Resources/Private/Layouts/
+        partialRootPath = EXT:ddev_bca/Resources/Private/Partials/
+        templateRootPath = EXT:ddev_bca/Resources/Private/Templates/
     }
 }
 
@@ -44,9 +44,9 @@ plugin.bootstrap_package {
 ########################
 plugin.bootstrap_package_contentelements {
     view {
-        layoutRootPath = EXT:bca11/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:bca11/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:bca11/Resources/Private/Templates/ContentElements/
+        layoutRootPath = EXT:ddev_bca/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:ddev_bca/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:ddev_bca/Resources/Private/Templates/ContentElements/
     }
 }
 
@@ -62,8 +62,8 @@ plugin.bootstrap_package_contentelements {
 #
 page.theme.navigation.type = top
 page.theme.navigation.style = default
-#page.logo.file = EXT:bca11/Resources/Public/Images/bca-192x192.png
-#page.logo.fileInverted = EXT:bca11/Resources/Public/Images/bca-192x192.png
+#page.logo.file = EXT:ddev_bca/Resources/Public/Images/bca-192x192.png
+#page.logo.fileInverted = EXT:ddev_bca/Resources/Public/Images/bca-192x192.png
 #page.logo.height = 210 
 #page.logo.width = 210
 #page.logo.alt = BCA
@@ -77,6 +77,6 @@ plugin.bootstrap_package.settings.scss.quaternary = #F1F1E6
 plugin.bootstrap_package.settings.scss.link-color = $secondary
 plugin.bootstrap_package_contentelements.header.defaultHeaderType = 4
 page.favicon.file >
-plugin.tx_news.view.twb5.templateRootPath = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Templates/
-plugin.tx_news.view.twb5.partialRootPath = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Partials/
-plugin.tx_news.view.twb5.layoutRootPath = EXT:bca11/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Layouts/
+plugin.tx_news.view.twb5.templateRootPath = EXT:ddev_bca/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Templates/
+plugin.tx_news.view.twb5.partialRootPath = EXT:ddev_bca/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Partials/
+plugin.tx_news.view.twb5.layoutRootPath = EXT:ddev_bca/Resources/Private/Templates/Extensions/News/Templates/Styles/Twb5/Layouts/
