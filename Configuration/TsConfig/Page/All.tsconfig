@@ -1,7 +1,7 @@
 #
-# PageTS for bca11
+# PageTS for ddev_bca
 #
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bca11/Configuration/TsConfig/Page/RTE.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bca11/Configuration/TsConfig/Page/TCEFORM.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bca11/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bca11/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ddev_bca/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ddev_bca/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ddev_bca/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ddev_bca/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
