@@ -5,14 +5,14 @@ call_user_func(function()
     /**
      * Temporary variables
      */
-    $extensionKey = 'bca11';
+    $extensionKey = 'ddev_bca';
 
     /**
-     * Default TypoScript for Bca11
+     * Default TypoScript for DdevBca
      */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         $extensionKey,
         'Configuration/TypoScript',
-        'bca11'
+        'ddev-bca'
     );
 });
