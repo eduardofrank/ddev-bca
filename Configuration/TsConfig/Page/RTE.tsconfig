@@ -3,6 +3,6 @@
 #############
 RTE {
     default {
-        preset = bca11
+        preset = ddev_bca
     }
 }
